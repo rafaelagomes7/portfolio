@@ -1,3 +1,7 @@
+// ==============================
+// CARROSSEL DE PROJETOS
+// ==============================
+
 const track = document.querySelector(".projects-track");
 const prevButton = document.querySelector(".prev-button");
 const nextButton = document.querySelector(".next-button");
@@ -47,7 +51,50 @@ if (track && prevButton && nextButton) {
         event.preventDefault();
 
         const distance = event.pageX - startX;
-
         track.scrollLeft = scrollStart - distance;
     });
+}
+
+
+// ==============================
+// IDIOMA
+// ==============================
+
+const ptButton = document.getElementById("pt-button");
+const enButton = document.getElementById("en-button");
+
+function changeLanguage(language) {
+    const elements = document.querySelectorAll("[data-pt][data-en]");
+
+    elements.forEach((element) => {
+        element.innerHTML = element.dataset[language];
+    });
+
+    document.documentElement.lang =
+        language === "pt" ? "pt-BR" : "en";
+
+    if (ptButton) {
+        ptButton.classList.toggle("active", language === "pt");
+    }
+
+    if (enButton) {
+        enButton.classList.toggle("active", language === "en");
+    }
+
+    localStorage.setItem("language", language);
+}
+
+if (ptButton && enButton) {
+    ptButton.addEventListener("click", () => {
+        changeLanguage("pt");
+    });
+
+    enButton.addEventListener("click", () => {
+        changeLanguage("en");
+    });
+
+    const savedLanguage =
+        localStorage.getItem("language") || "pt";
+
+    changeLanguage(savedLanguage);
 }

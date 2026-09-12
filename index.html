@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,50 @@
     <title>Rafaela Gomes — Product Designer</title>
 
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+<header class="header">
 
-        <a href="#inicio" class="logo">
-            Rafaela Gomes
-        </a>
+    <a href="#inicio" class="logo">
+        Rafaela Gomes
+    </a>
 
-        <nav class="nav">
-            <a href="#inicio">início</a>
-            <a href="#projetos">projetos</a>
-            <a href="#sobre">sobre mim</a>
-            <a href="#contato">contato</a>
-        </nav>
+    <nav class="nav">
 
-    </header>
+        <a href="#inicio">início</a>
+
+        <a href="#projetos">projetos</a>
+
+        <a href="#sobre">sobre mim</a>
+
+        <a href="#contato">contato</a>
+
+        <div class="language-switcher">
+            <button id="pt-button" class="active" type="button">
+                PT
+            </button>
+
+            <span>|</span>
+
+            <button id="en-button" type="button">
+                EN
+            </button>
+        </div>
+
+    </nav>
+
+</header>
 
 
     <main>
@@ -39,18 +62,67 @@
             <div class="hero-text">
 
                 <h1>
-                    Crio
-                    <span class="highlight yellow">experiências</span>
-                    e ajudo a transformá-las em
-                    <span class="highlight coral">produtos.</span>
+
+                    <span
+                        data-pt="Crio"
+                        data-en="I design"
+                    >
+                        Crio
+                    </span>
+
+                    <span
+                        class="highlight yellow"
+                        data-pt="experiências"
+                        data-en="experiences"
+                    >
+                        experiências
+                    </span>
+
+                    <span
+                        data-pt="e ajudo a transformá-las em"
+                        data-en="and help turn them into"
+                    >
+                        e ajudo a transformá-las em
+                    </span>
+
+                    <span
+                        class="highlight coral"
+                        data-pt="produtos."
+                        data-en="products."
+                    >
+                        produtos.
+                    </span>
+
                 </h1>
 
+
                 <p class="description">
-                    UX/UI Designer · Product Designer<br>
-                    Estudante de Design Digital
+
+                    <span
+                        data-pt="UX/UI Designer · Product Designer"
+                        data-en="UX/UI Designer · Product Designer"
+                    >
+                        UX/UI Designer · Product Designer
+                    </span>
+
+                    <br>
+
+                    <span
+                        data-pt="Estudante de Design Digital"
+                        data-en="Digital Design student"
+                    >
+                        Estudante de Design Digital
+                    </span>
+
                 </p>
 
-                <a href="#projetos" class="projects-link">
+
+                <a
+                    href="#projetos"
+                    class="projects-link"
+                    data-pt="ver projetos ↓"
+                    data-en="view projects ↓"
+                >
                     ver projetos ↓
                 </a>
 
@@ -58,11 +130,13 @@
 
 
             <div class="hero-collage">
+
                 <img
                     src="assets/ticketsfileira.png"
                     alt=""
                     class="tickets-image"
                 >
+
             </div>
 
         </section>
@@ -72,11 +146,19 @@
         <section id="projetos" class="projects">
 
             <div class="section-title">
+
                 <h2>
-                    <span class="section-highlight yellow">
+
+                    <span
+                        class="section-highlight yellow"
+                        data-pt="Projetos em destaque"
+                        data-en="Featured projects"
+                    >
                         Projetos em destaque
                     </span>
+
                 </h2>
+
             </div>
 
 
@@ -92,88 +174,163 @@
 
                 <div class="projects-track">
 
-                    <!-- 1 -->
+                    <!-- SISTEMA DE FIDELIZAÇÃO -->
                     <a
                         href="projetos/fidelizacao.html"
                         class="project-card"
                     >
-                       <div class="polaroid-image">
-                            <img src="assets/logofidelidade.png" alt="Sistema de Fidelização">
+
+                        <div class="polaroid-image">
+
+                            <img
+                                src="assets/logofidelidade.png"
+                                alt="Sistema de Fidelização"
+                            >
+
                         </div>
 
-                        <h3>Sistema de Fidelização</h3>
+                        <h3
+                            data-pt="Sistema de Fidelização"
+                            data-en="Loyalty System"
+                        >
+                            Sistema de Fidelização
+                        </h3>
 
-                        <p>
+                        <p
+                            data-pt="UX/UI · Frontend · Avante"
+                            data-en="UX/UI · Frontend · Avante"
+                        >
                             UX/UI · Frontend · Avante
                         </p>
+
                     </a>
 
 
-                    <!-- 2 -->
+                    <!-- ENTRELETRAS -->
                     <a
                         href="projetos/entreletras.html"
                         class="project-card"
                     >
+
                         <div class="polaroid-image">
-                            <img src="assets/entreletraslogo.png" alt="EntreLetras">
+
+                            <img
+                                src="assets/entreletraslogo.png"
+                                alt="EntreLetras"
+                            >
+
                         </div>
 
-                        <h3>EntreLetras</h3>
+                        <h3
+                            data-pt="EntreLetras"
+                            data-en="EntreLetras"
+                        >
+                            EntreLetras
+                        </h3>
 
-                        <p>
+                        <p
+                            data-pt="UX/UI · Pesquisa · Acessibilidade"
+                            data-en="UX/UI · Research · Accessibility"
+                        >
                             UX/UI · Pesquisa · Acessibilidade
                         </p>
+
                     </a>
 
 
-                    <!-- 3 -->
+                    <!-- LUMINI -->
                     <a
                         href="projetos/lumini.html"
                         class="project-card"
                     >
+
                         <div class="polaroid-image">
-                            <img src="assets/luminilogo.png" alt="Lumini">
+
+                            <img
+                                src="assets/luminilogo.png"
+                                alt="Lumini"
+                            >
+
                         </div>
 
-                        <h3>Lumini</h3>
+                        <h3
+                            data-pt="Lumini"
+                            data-en="Lumini"
+                        >
+                            Lumini
+                        </h3>
 
-                        <p>
+                        <p
+                            data-pt="Product Design · UX Research"
+                            data-en="Product Design · UX Research"
+                        >
                             Product Design · UX Research
                         </p>
+
                     </a>
 
 
-                    <!-- 4 -->
+                    <!-- NUTRA -->
                     <a
                         href="projetos/nutra.html"
                         class="project-card"
                     >
-                       <div class="polaroid-image">
-                            <img src="assets/nutralogopt.png" alt="Nutra">
+
+                        <div class="polaroid-image">
+
+                            <img
+                                src="assets/nutralogopt.png"
+                                alt="Nutra"
+                            >
+
                         </div>
 
-                        <h3>Nutra</h3>
+                        <h3
+                            data-pt="Nutra"
+                            data-en="Nutra"
+                        >
+                            Nutra
+                        </h3>
 
-                        <p>
+                        <p
+                            data-pt="UX/UI · Frontend"
+                            data-en="UX/UI · Frontend"
+                        >
                             UX/UI · Frontend
                         </p>
+
                     </a>
 
 
-                    <!-- 5 -->
+                    <!-- ÓTICA LUSA -->
                     <a
                         href="projetos/otica-lusa.html"
                         class="project-card"
                     >
+
                         <div class="polaroid-image">
-                            <img src="assets/logolusapt.png" alt="Ótica Lusa">
+
+                            <img
+                                src="assets/logolusapt.png"
+                                alt="Ótica Lusa"
+                            >
+
                         </div>
 
-                        <h3>Ótica Lusa</h3>
+                        <h3
+                            data-pt="Ótica Lusa"
+                            data-en="Ótica Lusa"
+                        >
+                            Ótica Lusa
+                        </h3>
 
-                        <p>
+                        <p
+                            data-pt="Identidade · Digital · Branding"
+                            data-en="Identity · Digital · Branding"
+                        >
                             Identidade · Digital · Branding
                         </p>
+
                     </a>
 
                 </div>
@@ -195,31 +352,54 @@
         <section id="sobre" class="about">
 
             <div class="about-image">
-                <img src="assets/foto.JPG" alt="Foto de Rafaela Gomes">
+
+                <img
+                    src="assets/foto.JPG"
+                    alt="Foto de Rafaela Gomes"
+                >
+
             </div>
 
 
             <div class="about-content">
 
                 <h2>
-                    <span class="section-highlight lavender">
+
+                    <span
+                        class="section-highlight lavender"
+                        data-pt="Sobre mim"
+                        data-en="About me"
+                    >
                         Sobre mim
                     </span>
+
                 </h2>
 
-                <h3>
+
+                <h3
+                    data-pt="Design para mim é transformar experiências em soluções."
+                    data-en="For me, design is about turning experiences into solutions."
+                >
                     Design para mim é
                     transformar experiências
                     em soluções.
                 </h3>
 
-                <p>
+
+                <p
+                    data-pt="Sou estudante de Design Digital e me interesso principalmente por UX/UI, pesquisa com usuários e design de produtos digitais."
+                    data-en="I am a Digital Design student mainly interested in UX/UI, user research, and digital product design."
+                >
                     Sou estudante de Design Digital e me interesso
                     principalmente por UX/UI, pesquisa com usuários
                     e design de produtos digitais.
                 </p>
 
-                <p>
+
+                <p
+                    data-pt="Gosto de entender problemas, investigar necessidades e transformar essas descobertas em interfaces que sejam claras, funcionais e agradáveis de usar."
+                    data-en="I enjoy understanding problems, investigating needs, and turning these insights into interfaces that are clear, functional, and enjoyable to use."
+                >
                     Gosto de entender problemas, investigar necessidades
                     e transformar essas descobertas em interfaces que
                     sejam claras, funcionais e agradáveis de usar.
@@ -234,67 +414,130 @@
         <section class="skills">
 
             <div class="section-title">
+
                 <h2>
-                    <span class="section-highlight coral">
+
+                    <span
+                        class="section-highlight coral"
+                        data-pt="Skills & ferramentas"
+                        data-en="Skills & tools"
+                    >
                         Skills & ferramentas
                     </span>
+
                 </h2>
+
             </div>
 
 
             <div class="skills-grid">
 
+                <!-- DESIGN -->
                 <div class="skill-group">
 
-                    <h3>Design</h3>
+                    <h3
+                        data-pt="Design"
+                        data-en="Design"
+                    >
+                        Design
+                    </h3>
 
                     <div class="skill-list">
+
                         <span>UX/UI Design</span>
                         <span>Product Design</span>
                         <span>Design de Sistemas</span>
-                        <span>Prototipação</span>
+                        <span
+                            data-pt="Prototipação"
+                            data-en="Prototyping"
+                        >
+                            Prototipação
+                        </span>
+
                     </div>
 
                 </div>
 
 
+                <!-- PESQUISA -->
                 <div class="skill-group">
 
-                    <h3>Pesquisa</h3>
+                    <h3
+                        data-pt="Pesquisa"
+                        data-en="Research"
+                    >
+                        Pesquisa
+                    </h3>
 
                     <div class="skill-list">
+
                         <span>UX Research</span>
-                        <span>Testes de Usabilidade</span>
-                        <span>Pesquisa Qualitativa</span>
-                        <span>Design Centrado no Usuário</span>
+
+                        <span
+                            data-pt="Testes de Usabilidade"
+                            data-en="Usability Testing"
+                        >
+                            Testes de Usabilidade
+                        </span>
+
+                        <span
+                            data-pt="Pesquisa Qualitativa"
+                            data-en="Qualitative Research"
+                        >
+                            Pesquisa Qualitativa
+                        </span>
+
+                        <span
+                            data-pt="Design Centrado no Usuário"
+                            data-en="User-Centered Design"
+                        >
+                            Design Centrado no Usuário
+                        </span>
+
                     </div>
 
                 </div>
 
 
+                <!-- METODOLOGIAS -->
                 <div class="skill-group">
 
-                    <h3>Metodologias</h3>
+                    <h3
+                        data-pt="Metodologias"
+                        data-en="Methodologies"
+                    >
+                        Metodologias
+                    </h3>
 
                     <div class="skill-list">
+
                         <span>Design Thinking</span>
                         <span>Double Diamond</span>
                         <span>Scrum</span>
                         <span>MVP</span>
+
                     </div>
 
                 </div>
 
 
+                <!-- FERRAMENTAS -->
                 <div class="skill-group">
 
-                    <h3>Ferramentas</h3>
+                    <h3
+                        data-pt="Ferramentas"
+                        data-en="Tools"
+                    >
+                        Ferramentas
+                    </h3>
 
                     <div class="skill-list">
+
                         <span>Figma</span>
                         <span>HTML & CSS</span>
                         <span>Claude</span>
                         <span>React · TypeScript · Vite</span>
+
                     </div>
 
                 </div>
@@ -304,49 +547,66 @@
         </section>
 
 
-       <!-- CONTATO -->
-<section id="contato" class="contact">
+        <!-- CONTATO -->
+        <section id="contato" class="contact">
 
-    <div class="section-title">
-        <h2>
-            <span class="section-highlight peach">
-                Vamos conversar?
-            </span>
-        </h2>
-    </div>
+            <div class="section-title">
 
-    <div class="contact-content">
+                <h2>
 
-        <p>
-            Tem um projeto, oportunidade ou ideia?
-            Entre em contato comigo.
-        </p>
+                    <span
+                        class="section-highlight peach"
+                        data-pt="Vamos conversar?"
+                        data-en="Let's talk?"
+                    >
+                        Vamos conversar?
+                    </span>
 
-        <div class="contact-links">
+                </h2>
 
-            <a
-                href="mailto:rafaelagomesresende7@gmail.com"
-                class="contact-link"
-            >
-                rafaelagomesresende7@gmail.com →
-            </a>
+            </div>
 
-            <a
-                href="https://www.linkedin.com/in/rafaela-gomes-a518b6340"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-link"
-            >
-                LinkedIn →
-            </a>
 
-        </div>
+            <div class="contact-content">
 
-    </div>
+                <p
+                    data-pt="Tem um projeto, oportunidade ou ideia? Entre em contato comigo."
+                    data-en="Have a project, opportunity, or idea? Get in touch with me."
+                >
+                    Tem um projeto, oportunidade ou ideia?
+                    Entre em contato comigo.
+                </p>
 
-</section>
 
-<script src="script.js"></script>
+                <div class="contact-links">
+
+                    <a
+                        href="mailto:rafaelagomesresende7@gmail.com"
+                        class="contact-link"
+                    >
+                        rafaelagomesresende7@gmail.com →
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/rafaela-gomes-a518b6340"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-link"
+                    >
+                        LinkedIn →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
